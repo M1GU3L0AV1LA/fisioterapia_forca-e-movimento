@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clínica Força & Movimento | Fisioterapia em Penha de França, São Paulo</title>
+<meta name="description" content="Clínica Força & Movimento: fisioterapia funcional em Penha de França, São Paulo. Tratamento individualizado para mais força, movimento e qualidade de vida. Agende sua avaliação pelo WhatsApp.">
+<meta name="keywords" content="fisioterapia, fisioterapia em Penha de França, fisioterapia em São Paulo, Clínica Força & Movimento, fisioterapia Penha de França">
+<meta property="og:title" content="Clínica Força & Movimento | Fisioterapia">
+<meta property="og:description" content="Fisioterapia funcional e individualizada em Penha de França, São Paulo. Mais força, mais movimento, mais qualidade de vida.">
+<meta property="og:image" content="assets/logo.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ SVG SPRITES (ícones reutilizáveis) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="icon-hands" viewBox="0 0 48 48"><path d="M8 24c0-3 2-6 5-7l6-2 6 3 6-3 6 2c3 1 5 4 5 7v6c0 6-5 11-11 11H19c-6 0-11-5-11-11v-6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M19 24l5 4 5-4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-dumbbell" viewBox="0 0 48 48"><path d="M10 18v12M14 15v18M34 15v18M38 18v12M14 24h20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></symbol>
+    <symbol id="icon-bolt" viewBox="0 0 48 48"><path d="M14 26l14-18-4 14h10L20 40l4-14H14z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="icon-stretch" viewBox="0 0 48 48"><path d="M24 8v10M24 18c-6 0-10 4-10 10v12M24 18c6 0 10 4 10 10v12M14 40h20" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="8" r="0.5" fill="none" stroke="currentColor" stroke-width="2.4"/></symbol>
+    <symbol id="icon-pulse" viewBox="0 0 48 48"><path d="M6 26h8l4-10 6 18 4-14 3 6h11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M5 13l4 4 10-10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 32 32"><path fill="currentColor" d="M16.02 3C9.4 3 4 8.38 4 15c0 2.36.7 4.55 1.9 6.4L4 29l7.8-1.85A11.9 11.9 0 0 0 16.02 27C22.64 27 28 21.62 28 15S22.64 3 16.02 3zm0 21.7c-2 0-3.86-.55-5.46-1.5l-.39-.23-4.6 1.1 1.13-4.5-.25-.42A9.55 9.55 0 0 1 5.3 15c0-5.9 4.8-10.7 10.72-10.7S26.74 9.1 26.74 15 21.94 24.7 16.02 24.7zm5.85-7.98c-.32-.16-1.9-.94-2.2-1.05-.29-.1-.5-.16-.72.16-.21.32-.83 1.05-1.02 1.27-.19.21-.38.24-.7.08-.32-.16-1.34-.5-2.55-1.6-.94-.85-1.58-1.9-1.76-2.22-.19-.32-.02-.5.14-.65.14-.14.32-.38.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.75-.99-2.4-.26-.62-.53-.54-.72-.55h-.62c-.21 0-.56.08-.85.4-.29.32-1.12 1.1-1.12 2.68 0 1.58 1.15 3.1 1.31 3.32.16.21 2.26 3.5 5.48 4.9.77.33 1.36.53 1.83.68.77.25 1.47.21 2.02.13.62-.1 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37z"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.5" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="icon-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6.3 6.9.7-5.2 4.7 1.5 6.8L12 17.6l-6.1 3.4 1.5-6.8-5.2-4.7 6.9-.7z"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#topo" class="brand" aria-label="Clínica Força & Movimento — início">
+      <img src="assets/logo.png" alt="Logotipo da Clínica Força & Movimento" class="brand-logo">
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+      <a href="#topo" class="nav-link">Início</a>
+      <a href="#clinica" class="nav-link">Clínica</a>
+      <a href="#tratamentos" class="nav-link">Tratamentos</a>
+      <a href="#como-funciona" class="nav-link">Como funciona</a>
+      <a href="#contato" class="nav-link">Contato</a>
+      <a href="https://wa.me/5511984463495?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Cl%C3%ADnica%20For%C3%A7a%20%26%20Movimento." class="btn btn-primary btn-nav" target="_blank" rel="noopener">Agende sua avaliação</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="topo">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Fisioterapia funcional &amp; individualizada</p>
+        <h1 class="hero-title">Mais força.<br>Mais movimento.<br><span class="text-accent">Mais qualidade de vida.</span></h1>
+        <p class="hero-sub">Um plano de tratamento pensado para as suas necessidades — com foco em recuperar força, amplitude de movimento e reduzir a dor no seu ritmo.</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/5511984463495?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Cl%C3%ADnica%20For%C3%A7a%20%26%20Movimento." class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+            <svg width="20" height="20"><use href="#icon-whatsapp"/></svg>
+            Agendar avaliação
+          </a>
+          <a href="#clinica" class="btn btn-ghost btn-lg">Conheça a clínica</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <svg class="hero-path" viewBox="0 0 420 420" fill="none" aria-hidden="true">
+          <path id="heroSwoop" d="M40 300 C 120 340, 200 340, 240 260 C 270 200, 210 170, 170 200 C 130 230, 170 270, 230 250 C 320 220, 340 130, 300 70" stroke="url(#gradSwoop)" stroke-width="7" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="gradSwoop" x1="40" y1="300" x2="300" y2="70" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#83A83F"/>
+              <stop offset="0.55" stop-color="#DD7D2F"/>
+              <stop offset="1" stop-color="#193064"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="hero-blob hero-blob--a" aria-hidden="true"></div>
+        <div class="hero-blob hero-blob--b" aria-hidden="true"></div>
+        <img src="assets/logo.png" alt="Logotipo da Clínica Força & Movimento" class="hero-logo">
+        <div class="hero-stat-card" aria-hidden="true">
+          <span class="hero-stat-label">Abordagem</span>
+          <span class="hero-stat-value">100% individual</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30 C 360 60, 1080 0, 1440 30 L1440 60 L0 60 Z" fill="var(--bg-alt)"/></svg>
+    </div>
+  </section>
+
+  <!-- ============ A CLÍNICA ============ -->
+  <section class="section" id="clinica">
+    <div class="wrap clinic-grid">
+      <div class="clinic-visual reveal">
+        <div class="clinic-gallery">
+          <figure><img src="assets/clinica-1.jpg" alt="Consultório da Clínica Força & Movimento, com atendimento personalizado e a marca da clínica na parede" loading="lazy"></figure>
+          <figure><img src="assets/clinica-2.jpg" alt="Fisioterapeuta acompanhando paciente durante exercício de fortalecimento na sala de tratamento" loading="lazy"></figure>
+          <figure><img src="assets/clinica-3.jpg" alt="Paciente realizando exercício de equilíbrio e propriocepção na sala de equipamentos" loading="lazy"></figure>
+          <figure><img src="assets/clinica-4.jpg" alt="Paciente realizando exercício de fortalecimento com faixa elástica no espaldar" loading="lazy"></figure>
+        </div>
+        <div class="clinic-badge">
+          <svg width="22" height="22"><use href="#icon-check"/></svg>
+          Tratamento planejado individualmente
+        </div>
+      </div>
+
+      <div class="clinic-copy reveal">
+        <p class="eyebrow">Clínica</p>
+        <h2 class="section-title">Fisioterapia pensada para cada pessoa, não para um protocolo padrão</h2>
+        <p class="section-text">Na Força & Movimento, entendemos que cada paciente chega com uma história, uma limitação e um objetivo diferente. Por isso, cada conduta é definida de acordo com a sua necessidade — combinando avaliação cuidadosa, técnicas manuais e exercícios direcionados para o resultado que você busca.</p>
+        <p class="section-text">Nosso trabalho é acompanhar sua evolução de perto, ajustando o tratamento a cada etapa, sempre com o objetivo de devolver força, movimento e qualidade de vida à sua rotina.</p>
+        <ul class="clinic-list">
+          <li><svg width="18" height="18"><use href="#icon-check"/></svg> Avaliação individual e acompanhamento próximo</li>
+          <li><svg width="18" height="18"><use href="#icon-check"/></svg> Conduta ajustada ao seu objetivo e prognóstico</li>
+          <li><svg width="18" height="18"><use href="#icon-check"/></svg> Localizada em Penha de França, São Paulo</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRATAMENTOS ============ -->
+  <section class="section section-alt" id="tratamentos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Como trabalhamos</p>
+        <h2 class="section-title">Métodos utilizados no seu tratamento</h2>
+        <p class="section-text">A conduta é sempre definida de acordo com a sua necessidade, combinando as técnicas abaixo para alcançar o prognóstico desejado.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="tcard reveal">
+          <img src="assets/treat-manual.jpg" alt="Fisioterapeuta aplicando terapia manual em paciente" class="tcard-photo" loading="lazy">
+          <div class="tcard-body">
+            <span class="tcard-icon"><svg width="30" height="30"><use href="#icon-hands"/></svg></span>
+            <h3>Terapia manual</h3>
+            <p>Técnicas aplicadas com as mãos para reduzir a dor, o desconforto articular e o processo inflamatório.</p>
+          </div>
+        </article>
+        <article class="tcard reveal">
+          <img src="assets/treat-carga.jpg" alt="Paciente realizando exercício de fortalecimento com carga" class="tcard-photo" loading="lazy">
+          <div class="tcard-body">
+            <span class="tcard-icon"><svg width="30" height="30"><use href="#icon-dumbbell"/></svg></span>
+            <h3>Exercícios com e sem carga</h3>
+            <p>Fortalecimento muscular gradual, respeitando seu momento e sua capacidade funcional.</p>
+          </div>
+        </article>
+        <article class="tcard reveal">
+          <img src="assets/treat-pliometrico.jpg" alt="Paciente realizando exercício de equilíbrio e estabilização" class="tcard-photo" loading="lazy">
+          <div class="tcard-body">
+            <span class="tcard-icon"><svg width="30" height="30"><use href="#icon-bolt"/></svg></span>
+            <h3>Exercícios pliométricos</h3>
+            <p>Movimentos que trabalham potência e estabilização mecânica, quando indicados ao seu caso.</p>
+          </div>
+        </article>
+        <article class="tcard reveal">
+          <div class="tcard-body">
+            <span class="tcard-icon"><svg width="30" height="30"><use href="#icon-stretch"/></svg></span>
+            <h3>Alongamentos</h3>
+            <p>Ganho de amplitude de movimento e flexibilidade, aliviando tensões e melhorando a mobilidade.</p>
+          </div>
+        </article>
+        <article class="tcard reveal">
+          <div class="tcard-body">
+            <span class="tcard-icon"><svg width="30" height="30"><use href="#icon-pulse"/></svg></span>
+            <h3>Eletroanalgesia</h3>
+            <p>Recurso utilizado para auxiliar na diminuição da dor e do desconforto ao longo do tratamento.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMO FUNCIONA ============ -->
+  <section class="section" id="como-funciona">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">O caminho até a sua evolução</p>
+        <h2 class="section-title">Como funciona o atendimento</h2>
+      </div>
+
+      <div class="timeline">
+        <svg class="timeline-track" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 20 C 250 -10, 350 50, 500 20 C 650 -10, 750 50, 1000 20" stroke="url(#gradSwoop)" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round" fill="none"/>
+        </svg>
+        <div class="timeline-steps">
+          <div class="tstep reveal">
+            <span class="tstep-num">01</span>
+            <h3>Avaliação</h3>
+            <p>Entendemos suas necessidades e limitações.</p>
+          </div>
+          <div class="tstep reveal">
+            <span class="tstep-num">02</span>
+            <h3>Planejamento</h3>
+            <p>Definimos uma conduta de acordo com seus objetivos.</p>
+          </div>
+          <div class="tstep reveal">
+            <span class="tstep-num">03</span>
+            <h3>Tratamento</h3>
+            <p>Aplicamos métodos terapêuticos e exercícios adequados.</p>
+          </div>
+          <div class="tstep reveal">
+            <span class="tstep-num">04</span>
+            <h3>Evolução</h3>
+            <p>Acompanhamos seu progresso buscando mais força, movimento e qualidade de vida.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENEFÍCIOS ============ -->
+  <section class="section section-navy" id="beneficios">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-light">O que buscamos junto com você</p>
+        <h2 class="section-title text-white">Para onde o tratamento caminha</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit reveal">
+          <span class="benefit-index">Mais</span>
+          <h3>Força</h3>
+          <p>Melhora da capacidade muscular e funcional.</p>
+        </div>
+        <div class="benefit reveal">
+          <span class="benefit-index">Mais</span>
+          <h3>Movimento</h3>
+          <p>Busca por maior mobilidade e amplitude de movimento.</p>
+        </div>
+        <div class="benefit reveal">
+          <span class="benefit-index">Menos</span>
+          <h3>Dor</h3>
+          <p>Redução do desconforto e melhora da função.</p>
+        </div>
+        <div class="benefit reveal">
+          <span class="benefit-index">Mais</span>
+          <h3>Qualidade de vida</h3>
+          <p>Um tratamento direcionado para sua rotina e seus objetivos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AVALIAÇÕES NO GOOGLE ============ -->
+  <section class="reviews-section" id="avaliacoes">
+    <div class="wrap reviews-inner reveal">
+      <div class="reviews-info">
+        <div class="reviews-stars" aria-hidden="true">
+          <svg width="20" height="20"><use href="#icon-star"/></svg>
+          <svg width="20" height="20"><use href="#icon-star"/></svg>
+          <svg width="20" height="20"><use href="#icon-star"/></svg>
+          <svg width="20" height="20"><use href="#icon-star"/></svg>
+          <svg width="20" height="20"><use href="#icon-star"/></svg>
+        </div>
+        <div>
+          <p class="reviews-title">Avaliações no Google</p>
+          <p class="reviews-text">As avaliações mais atuais de quem já foi atendido ficam sempre no perfil da clínica no Google, atualizadas em tempo real por quem avalia.</p>
+        </div>
+      </div>
+      <a href="https://www.google.com/search?q=forca+e+movimento+fisioterapia#lrd=0x94ce5f99500f7e69:0xb9ff498bedfca3c1,1,,,," target="_blank" rel="noopener" class="btn btn-primary">
+        Ver avaliações no Google
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ CTA AGENDAMENTO ============ -->
+  <section class="cta-banner">
+    <div class="wrap cta-banner-inner reveal">
+      <h2>Pronto para começar a cuidar do seu movimento?</h2>
+      <p>Agende uma avaliação e descubra uma abordagem de fisioterapia pensada para as suas necessidades.</p>
+      <a href="https://wa.me/5511984463495?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Cl%C3%ADnica%20For%C3%A7a%20%26%20Movimento." class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+        <svg width="20" height="20"><use href="#icon-whatsapp"/></svg>
+        Agendar minha avaliação
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="wrap faq-wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Dúvidas frequentes</p>
+        <h2 class="section-title">Perguntas frequentes</h2>
+      </div>
+
+      <div class="accordion reveal">
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            Como funciona a avaliação?
+            <svg width="20" height="20" class="acc-chevron"><use href="#icon-chevron"/></svg>
+          </button>
+          <div class="acc-panel"><p>[INSERIR DETALHES SOBRE COMO É FEITA A AVALIAÇÃO INICIAL]</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            Preciso agendar antes de ir à clínica?
+            <svg width="20" height="20" class="acc-chevron"><use href="#icon-chevron"/></svg>
+          </button>
+          <div class="acc-panel"><p>Sim. Para garantir o melhor atendimento, o agendamento deve ser feito previamente pelo WhatsApp.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            Como funciona o tratamento?
+            <svg width="20" height="20" class="acc-chevron"><use href="#icon-chevron"/></svg>
+          </button>
+          <div class="acc-panel"><p>Após a avaliação, é definida uma conduta de acordo com a sua necessidade, combinando técnicas manuais e exercícios até alcançar o prognóstico desejado.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            Quais métodos são utilizados?
+            <svg width="20" height="20" class="acc-chevron"><use href="#icon-chevron"/></svg>
+          </button>
+          <div class="acc-panel"><p>Terapia manual, exercícios com e sem carga, exercícios pliométricos, alongamentos e eletroanalgesia, conforme a indicação de cada caso.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            Onde a clínica está localizada?
+            <svg width="20" height="20" class="acc-chevron"><use href="#icon-chevron"/></svg>
+          </button>
+          <div class="acc-panel"><p>R. Cap. João Cesário, 78 — 2º andar, sala 01, Penha de França, São Paulo - SP, CEP 03603-000.</p></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-trigger" aria-expanded="false">
+            Como posso entrar em contato?
+            <svg width="20" height="20" class="acc-chevron"><use href="#icon-chevron"/></svg>
+          </button>
+          <div class="acc-panel"><p>Pelo WhatsApp (11) 98446-3495 ou pelo Instagram @forcaemovimento.fisio.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSTAGRAM ============ -->
+  <section class="insta-cta">
+    <div class="wrap insta-cta-inner reveal">
+      <svg width="34" height="34"><use href="#icon-insta"/></svg>
+      <div>
+        <p class="insta-eyebrow">Acompanhe a Clínica Força & Movimento</p>
+        <p class="insta-handle">@forcaemovimento.fisio</p>
+      </div>
+      <a href="https://instagram.com/forcaemovimento.fisio" target="_blank" rel="noopener" class="btn btn-ghost">Visitar Instagram</a>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="section section-alt" id="contato">
+    <div class="wrap contact-grid">
+      <div class="contact-info reveal">
+        <p class="eyebrow">Fale com a gente</p>
+        <h2 class="section-title">Contato</h2>
+
+        <a class="contact-row" href="https://www.google.com/maps?q=R.+Cap.+Jo%C3%A3o+Cesa%CC%81rio,+78+-+Penha+de+Franc%CC%A7a,+Sa%CC%83o+Paulo+-+SP,+03603-000" target="_blank" rel="noopener">
+          <span class="contact-icon"><svg width="20" height="20"><use href="#icon-pin"/></svg></span>
+          <span>R. Cap. João Cesário, 78 - 2º andar, sala 01<br>Penha de França, São Paulo - SP<br>CEP 03603-000</span>
+        </a>
+
+        <a class="contact-row" href="https://wa.me/5511984463495?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos%20da%20Cl%C3%ADnica%20For%C3%A7a%20%26%20Movimento." target="_blank" rel="noopener">
+          <span class="contact-icon"><svg width="20" height="20"><use href="#icon-whatsapp"/></svg></span>
+          <span>(11) 98446-3495</span>
+        </a>
+
+        <a class="contact-row" href="https://instagram.com/forcaemovimento.fisio" target="_blank" rel="noopener">
+          <span class="contact-icon"><svg width="20" height="20"><use href="#icon-insta"/></svg></span>
+          <span>@forcaemovimento.fisio</span>
+        </a>
+
+        <a href="https://wa.me/5511984463495?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos%20da%20Cl%C3%ADnica%20For%C3%A7a%20%26%20Movimento." class="btn btn-primary" target="_blank" rel="noopener">Falar pelo WhatsApp</a>
+      </div>
+
+      <div class="contact-map reveal">
+        <iframe
+          title="Mapa de localização da Clínica Força & Movimento"
+          src="https://www.google.com/maps?q=R.+Cap.+Jo%C3%A3o+Cesa%CC%81rio,+78,+Penha+de+Franc%CC%A7a,+Sa%CC%83o+Paulo+-+SP,+03603-000&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="Logotipo da Clínica Força & Movimento" class="footer-logo">
+      <p>Fisioterapia para mais força, movimento e qualidade de vida.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegação</h4>
+      <a href="#topo">Início</a>
+      <a href="#clinica">Clínica</a>
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#contato">Contato</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <a href="https://wa.me/5511984463495" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://instagram.com/forcaemovimento.fisio" target="_blank" rel="noopener">Instagram</a>
+      <span>R. Cap. João Cesário, 78, Penha de França - SP</span>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; 2026 Clínica Força & Movimento. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLUTUANTE ============ -->
+<a href="https://wa.me/5511984463495?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos%20da%20Cl%C3%ADnica%20For%C3%A7a%20%26%20Movimento." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg width="28" height="28"><use href="#icon-whatsapp"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
