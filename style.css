@@ -260,7 +260,7 @@ p{margin:0;color:var(--muted);line-height:1.65}
 .hero-logo{
   position:relative;
   z-index:1;
-  width:min(230px, 100%);
+  width:min(300px, 100%);
   filter:drop-shadow(0 18px 30px rgba(15,30,64,.18));
   animation:fadeUp .8s var(--ease) .2s both;
 }
