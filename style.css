@@ -370,6 +370,7 @@ p{margin:0;color:var(--muted);line-height:1.65}
   display:block;
   transition:transform .5s var(--ease);
 }
+.tcard-photo--wide{height:250px; object-fit:contain; background:var(--bg-alt)}
 .tcard:hover .tcard-photo{transform:scale(1.05)}
 .tcard-body{padding:26px 26px 30px}
 .tcard-icon{
