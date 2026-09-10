@@ -645,22 +645,8 @@ p{margin:0;color:var(--muted);line-height:1.65}
   .hero-inner{grid-template-columns:.95fr 1.05fr; padding-block:80px 120px}
   .hero-visual{
     order:-1;
-    flex-direction:row;
-    justify-content:center;
-    align-items:flex-start;
-    max-width:440px;
+    max-width:270px;
     min-width:0;
-    padding-bottom:36px;
-  }
-  .hero-logo{width:min(230px, 100%)}
-  .hero-stat-card{
-    position:absolute;
-    z-index:2;
-    bottom:0;
-    left:4%;
-    flex-direction:column;
-    align-items:flex-start;
-    text-align:left;
   }
   .clinic-grid{grid-template-columns:.9fr 1.1fr; gap:64px}
   .clinic-gallery{grid-template-columns:repeat(2, 1fr); align-items:start}
