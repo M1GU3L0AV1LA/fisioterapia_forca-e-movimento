@@ -369,7 +369,7 @@ p{margin:0;color:var(--muted);line-height:1.65}
 .tcard-photo{
   width:100%;
   aspect-ratio:1 / 1;
-  object-fit:cover;
+  object-fit:contain;
   display:block;
   background:var(--bg-alt);
   transition:transform .5s var(--ease);
@@ -564,7 +564,14 @@ p{margin:0;color:var(--muted);line-height:1.65}
   padding-bottom:40px;
   border-bottom:1px solid rgba(255,255,255,.1);
 }
-.footer-logo{height:36px; margin-bottom:14px}
+.footer-logo{
+  height:36px;
+  margin-bottom:14px;
+  background:#fff;
+  padding:10px 14px;
+  border-radius:10px;
+  display:block;
+}
 .footer-brand p{color:#8FA0C4; font-size:.92rem; max-width:280px}
 .footer-col{display:flex; flex-direction:column; gap:10px}
 .footer-col h4{color:#fff; font-size:.85rem; text-transform:uppercase; letter-spacing:.08em; margin-bottom:6px}
